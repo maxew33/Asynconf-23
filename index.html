@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Asynconf' magie du css</title>
+    </head>
+    <link rel="stylesheet" href="style.css" />
+    <body>
+        <!-- logic -->
+        <input type="checkbox" name="launch" id="launch" />
+        <input type="checkbox" name="help" id="help" />
+        <input type="checkbox" name="circle-1" id="circle-1" />
+        <input type="checkbox" name="circle-2" id="circle-2" />
+        <input type="checkbox" name="circle-3" id="circle-3" />
+
+        <!-- interface -->
+        <main class="interface">
+            <section class="home">
+                <label for="launch">launch game</label>
+            </section>
+            <section class="hint">
+                <div class="solution"></div>
+                <label for="help">close help</label>
+            </section>
+            <section class="board">
+                <label for="help">help me</label>
+                <label for="circle-1" class="circle circle1"></label>
+                <label for="circle-2" class="circle circle2"></label>
+                <label for="circle-3" class="circle circle3"></label>
+            </section>
+            <section class="end">you win</section>
+        </main>
+    </body>
+</html>

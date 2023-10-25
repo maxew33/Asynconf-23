@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+main {
+    --size: 60vmin;
+    --rotation-1: -120deg;
+    --rotation-2: -90deg;
+    --rotation-3: -30deg;
+
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    color: crimson;
+    font-family: 'Metal Mania';
+}
+
+section {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    background: black;
+    &:not(:first-of-type) {
+        display: none;
+    }
+}
+
+#launch:checked ~ .interface {
+    .home {
+        display: none;
+    }
+    .board {
+        display: block;
+    }
+}
+
+#help:checked ~ .interface {
+    .board {
+        display: none;
+    }
+    .hint {
+        display: block;
+    }
+}
+
+.home,
+.end {
+    display: grid;
+    place-content: center;
+    font-size: 4rem;
+}
+
+.end {
+    opacity: 0;
+    animation: 0.5s endgame ease-in-out forwards;
+}
+
+@keyframes endgame {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+.circle,
+.solution {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('https://zupimages.net/up/23/43/h03d.png');
+    background-size: var(--size);
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid orange;
+    transform: translate(-50%, -50%) rotate(var(--rotation));
+    transition: 0.25s transform linear;
+}
+
+.circle1,
+.solution {
+    height: var(--size);
+    width: var(--size);
+    --rotation: calc(120deg - calc(var(--rotation-1) + var(--rotation-3)));
+}
+
+.solution {
+    --rotation: 0;
+}
+
+.circle2 {
+    height: calc(var(--size) * 0.75);
+    width: calc(var(--size) * 0.75);
+    --rotation: calc(var(--rotation-1) + var(--rotation-2));
+}
+
+.circle3 {
+    height: calc(var(--size) * 0.5);
+    width: calc(var(--size) * 0.5);
+    --rotation: calc(300deg - calc(var(--rotation-2) + var(--rotation-3)));
+}
+
+#circle-1:checked ~ .interface {
+    --rotation-1: 90deg;
+}
+#circle-2:checked ~ .interface {
+    --rotation-2: 20deg;
+}
+#circle-3:checked ~ .interface {
+    --rotation-3: 30deg;
+}
+
+#circle-1:checked + #circle-2:not(:checked) + #circle-3:checked + .interface {
+    .end {
+        display: grid;
+    }
+}
