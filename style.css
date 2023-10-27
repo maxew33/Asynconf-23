@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --size: 60vmin;
+  --rotation-1: -120deg;
+  --rotation-2: -90deg;
+  --rotation-3: -30deg;
+}
+
 input {
   display: none;
 }
@@ -14,10 +21,6 @@ label {
 }
 
 main {
-  --size: 60vmin;
-  --rotation-1: -120deg;
-  --rotation-2: -90deg;
-  --rotation-3: -30deg;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -49,8 +52,7 @@ section:not(:first-of-type) {
   display: block;
 }
 
-.home,
-.end {
+.home, .end {
   display: grid;
   place-content: center;
   font-size: 4rem;
@@ -69,8 +71,7 @@ section:not(:first-of-type) {
     opacity: 0.9;
   }
 }
-.circle,
-.solution {
+.circle, .solution {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -83,8 +84,7 @@ section:not(:first-of-type) {
   transition: 0.25s transform linear;
 }
 
-.circle1,
-.solution {
+.circle1, .solution {
   height: var(--size);
   width: var(--size);
   --rotation: calc(120deg - calc(var(--rotation-1) + var(--rotation-3)));
@@ -120,4 +120,14 @@ section:not(:first-of-type) {
 
 #circle-1:checked + #circle-2:not(:checked) + #circle-3:checked + .interface .end {
   display: grid;
+}
+
+.splash {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-conic-gradient(crimson 0 3%, rgba(0, 0, 0, 0) 0 11%) #000;
+  filter: blur(20px) contrast(20);
+  box-shadow: 0 0 0 50px #000;
+  z-index: -1;
 }
