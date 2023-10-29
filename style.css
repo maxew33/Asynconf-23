@@ -32,45 +32,38 @@ section {
   height: inherit;
   width: inherit;
   position: absolute;
+  display: grid;
+  place-content: center;
   background: black;
 }
 section:not(:first-of-type) {
   display: none;
 }
 
+.home, .end {
+  font-size: 4rem;
+}
+
 #launch:checked ~ .interface .home {
   display: none;
 }
 #launch:checked ~ .interface .board {
-  display: block;
+  display: grid;
 }
 
 #help:checked ~ .interface .board {
   display: none;
 }
 #help:checked ~ .interface .hint {
-  display: block;
-}
-
-.home, .end {
   display: grid;
-  place-content: center;
-  font-size: 4rem;
 }
 
-.end {
-  opacity: 0;
-  animation: 0.5s endgame ease-in-out forwards;
+.help-btn {
+  position: relative;
+  top: calc(50vh - 5rem);
+  font-size: 3rem;
 }
 
-@keyframes endgame {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.9;
-  }
-}
 .circle, .solution {
   position: absolute;
   left: 50%;
@@ -122,6 +115,19 @@ section:not(:first-of-type) {
   display: grid;
 }
 
+.end {
+  opacity: 0;
+  animation: 0.5s endgame ease-in-out forwards;
+}
+
+@keyframes endgame {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
 .splash {
   position: absolute;
   width: 100vw;

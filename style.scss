@@ -33,6 +33,8 @@ section{
     height: inherit;
     width: inherit;
     position: absolute;
+    display: grid;
+    place-content: center;
     background: black;
     &:not(:first-of-type){
         display: none;
@@ -40,19 +42,23 @@ section{
 }
 
 .home, .end{
-    display: grid;
-    place-content: center;
     font-size: 4rem;
 }
 
 #launch:checked~.interface{
     .home{display:none;}
-    .board{display:block;}
+    .board{display:grid;}
 }
 
 #help:checked~.interface{
     .board{display:none;}
-    .hint{display:block;}
+    .hint{display:grid;}
+}
+
+.help-btn{
+    position: relative;
+    top: calc(50vh - 5rem);
+    font-size: 3rem;
 }
 
 .circle, .solution{
