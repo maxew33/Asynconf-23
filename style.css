@@ -7,6 +7,7 @@
 
 :root {
   --size: 60vmin;
+  --rotation: 0;
   --rotation-1: -120deg;
   --rotation-2: -90deg;
   --rotation-3: -30deg;
@@ -65,6 +66,8 @@ section:not(:first-of-type) {
 }
 
 .circle, .solution {
+  height: var(--size);
+  width: var(--size);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -77,14 +80,8 @@ section:not(:first-of-type) {
   transition: 0.25s transform linear;
 }
 
-.circle1, .solution {
-  height: var(--size);
-  width: var(--size);
+.circle1 {
   --rotation: calc(120deg - calc(var(--rotation-1) + var(--rotation-3)));
-}
-
-.solution {
-  --rotation: 0;
 }
 
 .circle2 {
