@@ -12,7 +12,7 @@ Ce repository contient le code présenté lors de l'Asynconf' 2023 ainsi que les
 
     -   [Slider de la Conférence](#Slider-de-la-Conférence)
     -   [Projets Présentés](#Projets-Présentés)
-    -   [Liens Pour s'Entraîner](#Liens-Pour-s'-Entraîner)    
+    -   [Liens Pour s'Entraîner](#liens-pour-sentraîner)    
     -   [Personnes à Suivre](#Personnes-à-Suivre)    
     -   [Chaînes à Suivre](#Chaînes-à-Suivre)
 
