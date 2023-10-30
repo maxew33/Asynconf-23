@@ -10,12 +10,11 @@ Ce repository contient le code présenté lors de l'Asynconf' 2023 ainsi que les
 
 -   [Liens](#Liens)
 
-    -   [Slide de la Conférence](#Slide-de-la-Conférence)
+    -   [Slider de la Conférence](#Slider-de-la-Conférence)
     -   [Projets Présentés](#Projets-Présentés)
-    -   [Liens Pour s'Entraîner](#Liens-Pour-s'Entraîner)    
+    -   [Liens Pour s'Entraîner](#Liens-Pour-s'-Entraîner)    
     -   [Personnes à Suivre](#Personnes-à-Suivre)    
-    -   [Chaînes à Suivre](#Chaînes-à-Suivre)    
-    -   [Liens Pour s'Entraîner](#Liens-Pour-s'Entraîner)
+    -   [Chaînes à Suivre](#Chaînes-à-Suivre)
 
 -   [Aperçu](#Aperçu)
 
@@ -28,15 +27,16 @@ Ce repository contient le code présenté lors de l'Asynconf' 2023 ainsi que les
 
 ## Liens
 
-### Slide de la Conférence
+### Slider de la Conférence
 ![first slide](https://github.com/maxew33/Asynconf-23/blob/master/img/cover.png)
-- [Google Slides](https://docs.google.com/presentation/d/1981wxuqu2o9kAqyWhVufHXmQ9CG_ZlNsWNiTTM2wb9s/edit?usp=sharing)
+- [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTxYG37LyBCoJszjuf0lPk4jqY3_ppuw7t5Bhq4Bg6jQZymnuSAokusmfh75kAg3WBdBgQ7ISSH3gjS/pub?start=true&loop=false&delayms=60000)
 
 ### Projets Présentés
 - [CSS Art](https://codepen.io/maxew33/pen/bGYQpdV)
 - [Single Div](https://codepen.io/maxew33/pen/WNJqbyW)
 - [Animation](https://codepen.io/maxew33/pen/MWVVaWE)
 - [Jeu](https://codepen.io/collection/BNGodw)
+- [menus burger](https://codepen.io/maxew33/pen/popGvpN)
 
 ### Liens Pour s'Entraîner
 - [CSS Battle](https://cssbattle.dev/)
